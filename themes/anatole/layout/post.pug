@@ -1,4 +1,4 @@
-extends partial/layout
+extends partial/post_layout
 
 include mixins
 
@@ -10,7 +10,8 @@ block description
     meta(name="description", content=desc)
 
 block content
-  .autopagerize_page_element: .content: .post-page
+  .autopagerize_page_element: .post-wrap: .post-page
+    a.btn.all-btn(role="navigation",href="/", title="All Post") All Post
     include mixins
     +make_post(page, true)
     .share

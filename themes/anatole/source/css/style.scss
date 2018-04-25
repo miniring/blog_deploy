@@ -128,14 +128,15 @@ a:hover, a:active {
 .content {
 	height: auto;
 	float: right;
-	width: 60%;
+	width: 40%;
+	margin-right: 20%;
 	margin-top:60px;
 }
 
 .page-top{
-	width: 60%;
+	width: 40%;
 	position: fixed;
-	right: 0;
+	right: 20%;
 	z-index: 3;
 	background-color: #fff;
 	height: 60px;
@@ -193,14 +194,14 @@ a:hover, a:active {
 
 }
 .sidebar {
-	width: 40%;
+	width: 20%;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-color: #fff;
 	height: 100%;
 	transition:0.8s;
 	top: 0;
-	left:0;
+	left:20%;
 	position: fixed;
 	z-index: 4;
 	border-right: 1px solid #f2f2f2;
@@ -652,7 +653,7 @@ a.btn {
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
-	border: 1px solid #464545;
+	border: 1px solid #4D7EC5;
 	white-space: nowrap;
 	font-weight: 400;
 	font-style: normal;
@@ -746,6 +747,7 @@ a.btn {
 @media screen and (max-width: 960px) {
 	.sidebar {
 		width: 100%;
+		left: 0;
 		position:absolute;
 		border-right:none;
 		z-index: 1;
@@ -764,7 +766,8 @@ a.btn {
 			}
 		}
 	.page-top{
-		width: 100%
+		width: 100%;
+		right: 0;
 	}
 	.post-title h3{
 		line-height: 1.6;

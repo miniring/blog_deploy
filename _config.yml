@@ -5,8 +5,8 @@
 # Site
 title: Miniring's Book
 subtitle: 기록 보관소
-description: 
-keywords:
+description: 미니링의 블로그
+keywords: django, python, swift, ios
 author: 이정민
 language: ko
 timezone: Asia/Seoul
@@ -81,3 +81,9 @@ deploy:
   type: git
   repo: git@github.com:miniring/blog.git
   branch: master
+
+archive_generator:
+  per_page: 0  
+  yearly: false
+  monthly: false
+  daily: false
