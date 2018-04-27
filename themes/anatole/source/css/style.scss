@@ -353,6 +353,9 @@ a:hover, a:active {
 				}
 				.tag {
 					color: #f7a046;
+					&:hover{
+						color: #4786D6;
+					}
 				}
 			}
 
