@@ -2,12 +2,29 @@
 	height: auto;
   width: 50%;
   margin: 0 auto;
-	margin-top:60px;
+	margin-top:5rem;
 }
 .post-wrap .all-btn {
   position: fixed;
   left: 50px;
   top: 30px;
+}
+@media screen and (max-width: 500px) {
+  .post-wrap .all-btn {
+    position: sticky;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+  }
+  .post-wrap {
+    width: 95%;
+    margin-top:2rem;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1280px){
+  .post-wrap {
+    width: 70%;
+  }
 }
 
 .post-content .tip {
