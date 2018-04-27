@@ -1,10 +1,10 @@
 mixin make_post(item, is_detail)
 	.post.animated.fadeInDown
 		.post-title
-			h3
-				if is_detail
-					a= item.title
-				else
+			if is_detail
+				h3.post-title-in= item.title
+			else
+				h3
 					a(href= url_for(item.path))= item.title
 		if is_detail
 			.post-content!= item.content
@@ -16,9 +16,9 @@ mixin make_post(item, is_detail)
 			.info
 				i.fa.fa-sun-o
 				span.date= date(item.date, 'YYYY-MM-DD')
-				if theme.duoshuo || theme.disqus
-					i.fa.fa-comment-o
-					a(href= url_for(item.path + "#comments"))= __('Comments')
+				//- if theme.duoshuo || theme.disqus
+				//- 	i.fa.fa-comment-o
+				//- 	a(href= url_for(item.path + "#comments"))= __('Comments')
 				if item.tags
 					i.fa.fa-tag
 					- item.categories.sort('posts').each(function(item) {
